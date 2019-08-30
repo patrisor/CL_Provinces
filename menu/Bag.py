@@ -1,0 +1,11 @@
+def viewBag():
+    print("this option doesnt exist yet")
+    print('')
+    print('')
+    print('your bag is tiny')
+    print('')
+    print('')
+    print('you have no items')
+    print('')
+    print('')
+    print('you will always die first')
