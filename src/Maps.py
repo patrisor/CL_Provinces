@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/20 00:06:24 by patrisor          #+#    #+#              #
-#    Updated: 2019/08/30 08:53:08 by patrisor         ###   ########.fr        #
+#    Updated: 2019/08/27 01:04:34 by patrisor         ###   ########.fr        #
 #    Updated: 2019/08/21 02:04:05 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -37,13 +37,14 @@ class TestMap:
         return "WALK: W, A, S, and D\nPAUSE: P\n\n"
 
     # TODO: update
-    def printMap(self, p, i, out = ""):
+    def printMap(self, p, i):
         #FOR TESTING
         '''
         print('\n')
         for r in range(len(self.map)):
-            print(' '.join(str(e) for e in self.map[r])) 
+            print(str(r) + ' ' + ' '.join(str(e) for e in self.map[r])) 
         '''
+        out = ""
         for r in range(len(self.map)):
             for c in range(len(self.map[r])):
                 if r == 0:

@@ -18,7 +18,8 @@ def itemPickUp(p, c, r):
 
 # Takes in a valid-input parameter, and a valid data type you want to comapre it to
 # Returns array of these found parameters
-def isValid(inp, inputs, ret = ''):
+def isValid(inp, inputs):
+    ret = ''
     for x in inputs:
         if x == inp: ret += str(x)
     return(ret)
